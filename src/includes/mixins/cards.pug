@@ -1,0 +1,19 @@
+mixin card(title, price, buttons, description)
+    article.card
+        .card__head    
+            h2.card__title= title
+            .card__subhead
+                span.symbolPrice $
+                span.priceNumber= price 
+        .card__body
+            ul.card__body
+                li.li.card__item description example as information
+                li.li.card__item description example as information
+                li.li.card__item description example as information
+                li.li.card__item description example as information
+            
+                +button
+
+
+
+    
