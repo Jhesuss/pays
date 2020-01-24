@@ -34,7 +34,7 @@ body {
 }
 
 .main-container {
-    background: url(../../assets_web/assets/fondo_site_starcups.png);
+    background: url(../../assets_web/assets/fondo_site_starcups.png) center / cover;
 }
 p {
     text-align: center;
@@ -131,6 +131,8 @@ input {
 .logo_img {
     display: inline-block;
     width: 20%;
+    max-width: 100%;
+    height: auto;
     margin-top: var(--image-margin);
     margin-bottom: var(--image-margin);
 }
