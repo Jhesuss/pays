@@ -10,14 +10,31 @@
     --color__cheveron-normal: hsl(143, 83%, 43%);
     --color__button: hsl(0, 0%, 5%);
     
-}
+    /*Margins*/
+    --size-margin: 1em;
 
+    --card-margin: 1.5rem;
+    --image-margin: 1.5rem;
+
+    /*Border Radius*/
+    --card-radius: 15px;
+    --bottom-radius: 10px;
+}
+/*Reset*/
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;    
+}
 body {
     font-family: Roboto;
-    text-align: center;
+    text-align: center;;
 }
+
 .main-container {
-    background: url(../../assets_web/assets/fondo_site_starcups.png) ;
+    background: url(../../assets_web/assets/fondo_site_starcups.png);
 }
 p {
     text-align: center;
@@ -29,44 +46,67 @@ p {
     color: var(--color__brand);
 }
 .body-container {
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     margin-top: .7rem;
     width: 100%;
 }
+
+
+/* 
+    
+    Styles and configurations only cards.
+    To modify, change the values on variables.
+
+*/
 .card {
     background-color: var(--color__white);
-    display: inline-block;
+    display: inline-flex;
     /*
         Para no tener que usar media queries
+        flex: 1 1 15rem;
     */
-    flex: 1 1 15rem;
+    flex-direction: column;
     border-radius: 10px;
-    height: 90%;
-    width: 10%;
-    margin-right: 2rem;
-    margin-left: 2rem;
+    width: 22%;
+    
+    margin-right: var(--card-margin);
+    margin-bottom: 0;
+    margin-left: var(--card-margin);
+    margin-top: var(--card-margin);
 }
 .card__head {
     background-color: var(--color__backgroundtop);
+    border-radius: 15px 15px 0px 0px;
 }
 .card__body {
-    background-color:var(--color__backgroundtop);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.card__bottom {
+    margin-top: var(--size-margin);
+    margin-bottom: var(--size-margin);
+    
 }
 .card__title {
+    margin-top: var(--size-margin);
     color: var(--color__title);
-    font-size: 2rem;
-}
-.paragraph {
     font-size: 1rem;
 }
-li {
-    padding-left: 1rem;
+.paragraph {   
+    font-size: 14px;
+}
+li {    
     list-style-type: none;
+    font-size: .8rem;
 }
 li::before {
-    content: ' ';
-    display: inline-block;
+    content: '';
+    display: inline-flex;
     width: 50px;
     height:50px;
     background: url(./check.svg) 15px 20px / 50% no-repeat;
@@ -78,13 +118,19 @@ li::before {
     font-size: 2rem;
 }
 input {
-    width: 30%;
+    /*Change size if is necessary, to modify only size of width*/
+    width: 50%;
+    border-radius: var(--bottom-radius);
+    margin-top: 3em;
 }
 .information {
     display: inline-block;
-    width: 50%;
+    width: 40%;
+    
 }
 .logo_img {
     display: inline-block;
     width: 20%;
+    margin-top: var(--image-margin);
+    margin-bottom: var(--image-margin);
 }

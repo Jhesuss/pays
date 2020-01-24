@@ -4,15 +4,18 @@ mixin card(title, price, buttons, description)
             h2.card__title= title
             .card__subhead
                 span.symbolPrice $
-                span.priceNumber= price 
+                span.priceNumber= price
+                span.symbolPrice  USD 
+                //- Modificar el .discount al igual que USD
+                .discount= price 
         .card__body
             ul.card__body
                 li.li.card__item description example as information
                 li.li.card__item description example as information
                 li.li.card__item description example as information
-                li.li.card__item description example as information
-            
-                +button
+                li.li.card__item description example as information    
+        .card__bottom
+            +button
 
 
 
