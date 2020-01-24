@@ -66,5 +66,8 @@ const swiper = new Swiper('.swiper-container', {
       depth: 900,
       modifier: 1,
       slideShadows : false,
-    }
+    }, 
+    pagination: {
+        el: '.swiper-pagination',
+    },    
   });
