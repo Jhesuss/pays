@@ -19,6 +19,8 @@
     /*Border Radius*/
     --card-radius: 15px;
     --bottom-radius: 10px;
+
+    --width-card: 300px
 }
 /*Reset*/
 *,
@@ -30,11 +32,15 @@
 }
 body {
     font-family: Roboto;
-    text-align: center;;
+    text-align: center;
 }
 
 .main-container {
     background: url(../../assets_web/assets/fondo_site_starcups.png) center / cover;
+    display: inline-flex;
+    flex-direction: column;
+    
+    
 }
 p {
     text-align: center;
@@ -44,6 +50,11 @@ p {
     text-transform: capitalize;
     font-weight: 600;
     color: var(--color__brand);
+}
+.top-container{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
 }
 .body-container {
     /* display: flex;
@@ -66,18 +77,23 @@ p {
         Para no tener que usar media queries
         flex: 1 1 15rem;
     */
-    flex-direction: column;
+    flex-wrap: wrap;
     border-radius: 10px;
-    width: 22%;
+    width: 100%;
     
     margin-right: var(--card-margin);
-    margin-bottom: 0;
+    margin-bottom: 10;
     margin-left: var(--card-margin);
     margin-top: var(--card-margin);
 }
 .card__head {
     background-color: var(--color__backgroundtop);
     border-radius: 15px 15px 0px 0px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
 }
 .card__body {
     display: inline-flex;
@@ -90,7 +106,7 @@ p {
 .card__bottom {
     margin-top: var(--size-margin);
     margin-bottom: var(--size-margin);
-    
+    padding-left: calc(var(--width-card) - 16.5rem);
 }
 .card__title {
     margin-top: var(--size-margin);
@@ -130,9 +146,20 @@ input {
 }
 .logo_img {
     display: inline-block;
-    width: 20%;
-    max-width: 100%;
-    height: auto;
+    width: 25%;
+    /* max-width: 100%;
+    height: auto; */
     margin-top: var(--image-margin);
     margin-bottom: var(--image-margin);
 }
+
+
+
+.swiper-container {
+    width: 100%;
+    /* padding-top: 10px;
+    padding-bottom: 100px;     */
+  }
+.swiper-slide {
+    width: var(--width-card);
+  }

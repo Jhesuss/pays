@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pagos | STARTCUPS</title>
     <meta name="description">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body class="main-container">
@@ -21,52 +22,63 @@
       </div>
     </div>
     <div class="body-container">
-      <article class="card">
-        <div class="card__head">   
-          <h2 class="card__title">Premium</h2>
-          <div class="card__subhead"><span class="symbolPrice">$</span><span class="priceNumber">150.99</span><span class="symbolPrice"> USD </span>
-            <div class="discount">150.99</div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper"> 
+          <div class="swiper-slide">
+            <article class="card" id="mobile_card">
+              <div class="card__head">   
+                <h2 class="card__title">Premium</h2>
+                <div class="card__subhead"><span class="symbolPrice">$</span><span class="priceNumber">150.99</span><span class="symbolPrice"> USD </span>
+                  <div class="discount">150.99</div>
+                </div>
+              </div>
+              <div class="card__body">
+                <ul class="card__body">
+                  <li class="li card__item">description example as information</li>
+                  <li class="li card__item">description example as information</li>
+                  <li class="li card__item">description example as information</li>
+                  <li class="li card__item">description example as information    </li>
+                </ul>
+              </div>
+              <div class="card__bottom">
+                <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick"/>
+                  <input type="hidden" name="hosted_button_id" value="AMXP343T2DYSE"/>
+                  <input type="image" src="../assets_web/assets/contrata.svg" border="0" name="submit" alt="Paga por PayPal"/><img alt="" border="0" src="../assets_web/assets/contrata.svg" width="1" height="1"/>
+                </form>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-slide">
+            <article class="card" id="mobile_card">
+              <div class="card__head">   
+                <h2 class="card__title">Basic</h2>
+                <div class="card__subhead"><span class="symbolPrice">$</span><span class="priceNumber">50.99</span><span class="symbolPrice"> USD </span>
+                  <div class="discount">50.99</div>
+                </div>
+              </div>
+              <div class="card__body">
+                <ul class="card__body">
+                  <li class="li card__item">description example as information</li>
+                  <li class="li card__item">description example as information</li>
+                  <li class="li card__item">description example as information</li>
+                  <li class="li card__item">description example as information    </li>
+                </ul>
+              </div>
+              <div class="card__bottom">
+                <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+                  <input type="hidden" name="cmd" value="_s-xclick"/>
+                  <input type="hidden" name="hosted_button_id" value="AMXP343T2DYSE"/>
+                  <input type="image" src="../assets_web/assets/contrata.svg" border="0" name="submit" alt="Paga por PayPal"/><img alt="" border="0" src="../assets_web/assets/contrata.svg" width="1" height="1"/>
+                </form>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="card__body">
-          <ul class="card__body">
-            <li class="li card__item">description example as information</li>
-            <li class="li card__item">description example as information</li>
-            <li class="li card__item">description example as information</li>
-            <li class="li card__item">description example as information    </li>
-          </ul>
-        </div>
-        <div class="card__bottom">
-          <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick"/>
-            <input type="hidden" name="hosted_button_id" value="AMXP343T2DYSE"/>
-            <input type="image" src="../assets_web/assets/contrata.svg" border="0" name="submit" alt="Paga por PayPal"/><img alt="" border="0" src="../assets_web/assets/contrata.svg" width="1" height="1"/>
-          </form>
-        </div>
-      </article>
-      <article class="card">
-        <div class="card__head">   
-          <h2 class="card__title">Premium</h2>
-          <div class="card__subhead"><span class="symbolPrice">$</span><span class="priceNumber">150.99</span><span class="symbolPrice"> USD </span>
-            <div class="discount">150.99</div>
-          </div>
-        </div>
-        <div class="card__body">
-          <ul class="card__body">
-            <li class="li card__item">description example as information</li>
-            <li class="li card__item">description example as information</li>
-            <li class="li card__item">description example as information</li>
-            <li class="li card__item">description example as information    </li>
-          </ul>
-        </div>
-        <div class="card__bottom">
-          <form target="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
-            <input type="hidden" name="cmd" value="_s-xclick"/>
-            <input type="hidden" name="hosted_button_id" value="AMXP343T2DYSE"/>
-            <input type="image" src="../assets_web/assets/contrata.svg" border="0" name="submit" alt="Paga por PayPal"/><img alt="" border="0" src="../assets_web/assets/contrata.svg" width="1" height="1"/>
-          </form>
-        </div>
-      </article>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
