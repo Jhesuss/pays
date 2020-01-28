@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pagos | STARTCUPS</title>
     <meta name="description">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
@@ -21,9 +22,14 @@
         </p>
       </div>
     </div>
-    <div class="body-container">
+    <div class="controls">
+      <button class="slide-1" data-operation="change-monthly">Mensual</button>
+      <button class="slide-250" data-operation="change-annual">Anual</button>
+    </div>
+    <div class="body-container">   
       <div class="swiper-container">
-        <div class="swiper-wrapper"> 
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
             <article class="card" id="mobile_card">
               <div class="card__head">   
@@ -75,7 +81,6 @@
             </article>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
     </div>
     <script src="js/swiper.min.js"></script>

@@ -12,19 +12,24 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title= `${pageTitle} | ${siteName}`
         meta(name="description", content= metaDescription) 
+        link(rel="stylesheet", href="css/normalize.css")
         link(rel="stylesheet", href="css/swiper.min.css")
         link(rel="stylesheet", href="css/styles.css")
+        
+        
     body.main-container
         .top-container
             .image
                 block image
             .information
                 block content
-        .body-container
+        .controls
+            +button_date
+        .body-container    
             .swiper-container
-                .swiper-wrapper 
-                        block cards
                 .swiper-pagination
+                .swiper-wrapper
+                    block cards
         script(src="js/swiper.min.js")
         script(src="js/script.js")
             

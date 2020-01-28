@@ -71,3 +71,12 @@ const swiper = new Swiper('.swiper-container', {
         el: '.swiper-pagination',
     },    
   });
+
+  document.querySelector('.slide-1').addEventListener('click', function (e) {
+    e.preventDefault();
+    swiper.slideTo(0, 0);
+  });
+  document.querySelector('.slide-250').addEventListener('click', function (e) {
+    e.preventDefault();
+    swiper.slideTo(249, 0);
+  });
