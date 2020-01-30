@@ -83,6 +83,15 @@
         </div>
       </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+      $(document).on('click', 'div button', function(){
+          $(this).addClass('active').siblings().removeClass('active')                
+      })
+      $(document).on('click', '.slide-250', function(){
+          $(this).addClass('active').siblings().removeClass('active')
+      })
+    </script>
     <script src="js/swiper.min.js"></script>
     <script src="js/script.js"></script>
   </body>

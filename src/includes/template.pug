@@ -30,6 +30,17 @@ html(lang="en")
                 .swiper-pagination
                 .swiper-wrapper
                     block cards
+        script(
+			  src="https://code.jquery.com/jquery-3.4.1.js",
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=",
+			  crossorigin="anonymous")
+        script.
+            $(document).on('click', 'div button', function(){
+                $(this).addClass('active').siblings().removeClass('active')                
+            })
+            $(document).on('click', '.slide-250', function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
         script(src="js/swiper.min.js")
         script(src="js/script.js")
             

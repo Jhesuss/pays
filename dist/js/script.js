@@ -61,17 +61,18 @@ const swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     slidesPerView: 'auto',
     coverflowEffect: {
-      rotate: 0,
+      rotate: 2,
       stretch: 0,
       depth: 900,
       modifier: 1,
       slideShadows : false,
     }, 
     pagination: {
-        el: '.swiper-pagination',
+       el: '.swiper-pagination',
     },    
   });
 
+  
   document.querySelector('.slide-1').addEventListener('click', function (e) {
     e.preventDefault();
     swiper.slideTo(0, 0);
