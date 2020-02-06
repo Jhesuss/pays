@@ -75,6 +75,10 @@
 
 @media (max-width: 768px) and (min-width: 0px){
     /* Buttons-Date */
+    body{
+        width: 100vw;
+        overflow-x: hidden;
+    }
     .controls {
         display: inline-flex;
         justify-content: center;
@@ -146,6 +150,12 @@
     height: 12px;
     background-color:hsla(0, 0%, 100%, 1);
     border-radius: 20px;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 10px;
+    left: 0;
+    width: 10%;
 }
 input {
     /*Change size if is necessary, to modify only size of width*/
