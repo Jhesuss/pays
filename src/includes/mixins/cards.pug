@@ -1,24 +1,31 @@
-mixin card(title, price, buttons, description)
+mixin card(plan, percent, price, priceDiscount)
     .swiper-slide
         article#mobile_card.card
             .card__head    
-                h2.card__title= title
+                h2.card__title PREMIUM 
+                .plan__info
+                    span.plan Plan
+                    .type_plan= plan
+                span.save= percent
                 .card__subhead
                     span.symbolPrice $
                     span.priceNumber= price
                     span.symbolPrice  USD 
                     //- Modificar el .discount al igual que USD
-                    .discount= price 
+                    .container_discount
+                        .discount= priceDiscount 
+                        span.date /mes
             
             .card__body
-                ul.card__body
-                    li.li.card__item description example as information
-                    li.li.card__item description example as information
-                    li.li.card__item description example as information
-                    li.li.card__item description example as information    
+                p.benefits beneficios
+                    ul.card__body
+                        li.li.card__item description example as information
+                        li.li.card__item description example as information
+                        li.li.card__item description example as information
+                        li.li.card__item description example as information    
             .card__bottom
                 +button_pays
 
-
+06 octubre del 1974
 
     

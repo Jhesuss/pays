@@ -2,7 +2,7 @@
     /* Colors */
     --color__brand: hsl(48.3, 99.2%, 50.4%);
     --color__white: hsl(0, 0%, 100%);
-    --color__title: hsl(217, 45%, 25%);
+    --color__title: hsl(0, 0%, 5.5%);
     --color__price: hsl(57, 58%, 25%);
     --color__list: hsl(0, 0%, 69%);
     --color__backgroundtop: hsl(200, 2%, 98%);
@@ -25,7 +25,7 @@
     --bottom-radius: 4px;
 
     --width-card: 300px;
-    --width-card--web: 300px
+    --width-card--web: 350px
     
 }
 /* ----------------------------------------- */
@@ -166,11 +166,15 @@ input {
         max-width: 100%;
         
     }
+    .card__head {
+        text-transform: uppercase;
+    }
     input {
         /*Change size if is necessary, to modify only size of width*/
         width: 60%;
         border-radius: var(--bottom-radius);
         margin-top: 1em;
+        margin-left: 1em;
     }
     
     .swiper-slide {
@@ -212,6 +216,57 @@ input {
     .swiper-container-3d .swiper-cube-shadow, .swiper-container-3d .swiper-slide, .swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top, .swiper-container-3d .swiper-wrapper {
         transform: translate3d(0px, 0px, 0px) !important;
         transition: none;    
+    }
+    .type_plan {
+        color: var(--color__title);
+        
+    }
+    .benefits {
+        margin-top: 1em;
+        text-transform: uppercase;
+        color: var(--color__button);
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .type_plan {
+        color: var(--color__brand);
+        
+    }
+    .save{
+        font-size: 12px;
+        text-transform: uppercase;
+        color: black;
+        font-weight: 600;
+        background-color: var(--color__brand);
+        padding-right: 5px;
+        padding-left: 5px;
+        line-height: 1.2;
+    }
+    .plan__info{
+        display: inline-flex;
+        height: 25%;
+        margin-top: 2px;
+        margin-bottom: 5px;
+        font-size: 25px;
+
+    }
+    .plan {
+        text-transform: capitalize;
+        font-weight: 600;
+        margin-right: 5px;
+    }
+    .symbolPrice {
+        font-weight: 400;
+    }
+    
+    .discount{
+        display: inline-flex;
+        margin-right: 2px;
+    }
+    .date {
+        text-transform: lowercase;
+        font-weight: 300;
+        font-size: 12px;
     }
     
 }
@@ -314,7 +369,7 @@ li::before {
     font-weight: 700;
 }
 .priceNumber {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .information {
