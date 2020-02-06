@@ -1,4 +1,4 @@
-mixin card(plan, percent, price, priceDiscount)
+mixin card(plan, percent= ' ', price, priceDiscount, mes, item1, item2, item3, item4, item5)
     .swiper-slide
         article#mobile_card.card
             .card__head    
@@ -14,18 +14,20 @@ mixin card(plan, percent, price, priceDiscount)
                     //- Modificar el .discount al igual que USD
                     .container_discount
                         .discount= priceDiscount 
-                        span.date /mes
+                        span.date= mes
             
             .card__body
                 p.benefits beneficios
                     ul.card__body
-                        li.li.card__item description example as information
-                        li.li.card__item description example as information
-                        li.li.card__item description example as information
-                        li.li.card__item description example as information    
+                        block list_items
+                            li.li.card__item= item1
+                            li.li.card__item= item2
+                            li.li.card__item= item3
+                        
+
             .card__bottom
                 +button_pays
 
-06 octubre del 1974
+
 
     

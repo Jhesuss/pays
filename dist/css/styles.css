@@ -1,3 +1,4 @@
+
 :root {
     /* Colors */
     --color__brand: hsl(48.3, 99.2%, 50.4%);
@@ -152,6 +153,57 @@ input {
     border-radius: var(--bottom-radius);
     margin-top: 3em;
 }
+.type_plan {
+    color: var(--color__title);
+    
+}
+.benefits {
+    margin-top: 1em;
+    text-transform: uppercase;
+    color: var(--color__button);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.type_plan {
+    color: var(--color__brand);
+
+}
+.save{
+    font-size: 12px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    background-color: var(--color__brand);
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 1.2;
+}
+.plan__info{
+    display: inline-flex;
+    height: 25%;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    font-size: 25px;
+
+}
+.plan {
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-right: 5px;
+}
+.symbolPrice {
+    font-weight: 400;
+}
+
+.discount{
+    display: inline-flex;
+    margin-right: 2px;
+}
+.date {
+    text-transform: lowercase;
+    font-weight: 300;
+    font-size: 12px;
+}
     
 }
 @media(max-width:1920px) and (min-width:769px) {
@@ -230,7 +282,7 @@ input {
     }
     .type_plan {
         color: var(--color__brand);
-        
+
     }
     .save{
         font-size: 12px;
@@ -269,9 +321,10 @@ input {
         font-size: 12px;
     }
     
+    
 }
 body {
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 
@@ -354,15 +407,30 @@ p {
 .paragraph {   
     font-size: 14px;
 }
+.li .card__item {
+    display: flex;
+}
 li {    
     list-style-type: none;
     font-size: .8rem;
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 2em;
+    display: inline-flex;
+    width: 70%;
+    text-align: left;
+}
+.card-1 {
+    border: 2px solid red;
 }
 li::before {
     content: '';
     display: inline-flex;
     width: 50px;
     height:50px;
+    top: -25px;
+    left: -20px;
+    position: absolute;
     background: url(./check.svg) 15px 20px / 50% no-repeat;
 }
 .card__subhead{

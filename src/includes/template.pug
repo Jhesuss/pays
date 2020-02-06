@@ -12,8 +12,9 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title= `${pageTitle} | ${siteName}`
         meta(name="description", content= metaDescription) 
-        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/normalize.css")            
         link(rel="stylesheet", href="css/swiper.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Roboto&display=swap", rel="stylesheet")
         link(rel="stylesheet", href="css/styles.css")      
     body.main-container
         .top-container
@@ -29,6 +30,7 @@ html(lang="en")
                 .swiper-wrapper
                 
                     block cards
+                    
         script(
 			  src="https://code.jquery.com/jquery-3.4.1.js",
 			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=",
